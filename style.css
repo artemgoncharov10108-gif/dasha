@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+    color: #4a2c2c;
+    padding: 2rem 1rem;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* ===== Хедер с анимацией ===== */
+.hero {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    position: relative;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    background: linear-gradient(135deg, #d44c4c, #ff8c8c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.hero .sub {
+    font-size: 1.2rem;
+    color: #b97f7f;
+    letter-spacing: 1px;
+}
+
+.floating-heart {
+    font-size: 3rem;
+    animation: float 3s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ===== Прогресс ===== */
+.progress-section {
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    background: #ffe0e0;
+    border-radius: 60px;
+    padding: 0.3rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.progress-bar {
+    background: #ff7b7b;
+    height: 12px;
+    border-radius: 60px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.counter-text {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #b95c5c;
+}
+
+/* ===== Сетка карточек ===== */
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+/* Карточка причины */
+.reason-card {
+    background: white;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #ffd9d9;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.reason-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.1);
+    border-color: #ffb5b5;
+    background: #fffafc;
+}
+
+.card-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: #ffe2e2;
+    color: #d45555;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    flex-shrink: 0;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #2e2e2e;
+    font-weight: 500;
+}
+
+/* ===== Милые блоки и кнопки ===== */
+.love-note {
+    text-align: center;
+    background: #fff0f0;
+    padding: 2rem;
+    border-radius: 3rem;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    border: 2px dashed #ffb6b6;
+}
+
+.btn-extra {
+    background: #ff7b7b;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-extra:hover {
+    background: #e95e5e;
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #b57c7c;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 680px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+    .love-note {
+        font-size: 1rem;
+    }
+}

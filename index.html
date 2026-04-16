@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>100 причин, почему я тебя люблю ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка с сердечком -->
+        <div class="hero">
+            <div class="floating-heart">❤️</div>
+            <h1>100 причин, почему я тебя люблю</h1>
+            <div class="sub">каждая причина — кусочек моего сердца</div>
+        </div>
+
+        <!-- Прогресс просмотра -->
+        <div class="progress-section">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="counter-text" id="counterText">💖 0 из 100 💖</div>
+        </div>
+
+        <!-- Сетка с причинами (динамически через JS) -->
+        <div class="reasons-grid" id="reasonsGrid"></div>
+
+        <!-- Милый блок с кнопками -->
+        <div class="love-note">
+            🌸 <strong>знаешь, что?</strong> 🌸<br>
+            даже если бы причин было тысяча,<br>
+            я бы всё равно находил новые каждый день.<br>
+            <button class="btn-extra" id="surpriseBtn">🎁 нажми для сюрприза</button>
+            <button class="btn-extra" id="shareLoveBtn">💌 поделиться любовью</button>
+        </div>
+
+        <footer>
+            сделано с душой для <strong id="girlName">моей девочки</strong> 🩷
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
