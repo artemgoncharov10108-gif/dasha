@@ -222,10 +222,10 @@ function renderReasons() {
         const card = document.createElement('div');
             card.className = 'reason-card';
             card.innerHTML = 
-                <div class="card-number">${i+1}</div>
-                <div class="card-text">${reason}</div>
+                `<div class="card-number">${i+1}</div>
+                <div class="card-text">${reason}</div>`
             ;
-            card.addEventListener('click', () => toast(❤️ №${i+1}: ${reason}));
+            card.addEventListener('click', () => toast(`❤️ №${i+1}: ${reason}`));
             grid.appendChild(card);
     });
 }
