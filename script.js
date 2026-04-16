@@ -258,7 +258,7 @@ function toast(msg) {
 function showSurprise() {
     const modal = document.createElement('div');
     modal.innerHTML = 
-        <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); display:flex; align-items:center; justify-content:center; z-index:10000;">
+       " <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); display:flex; align-items:center; justify-content:center; z-index:10000;">
             <div style="background:#fff0f0; border-radius:3rem; padding:2rem; text-align:center; max-width:400px;">
                 <div style="font-size:4rem;">🎉💖🎉</div>
                 <h2 style="color:#d44c4c;">Ты — моё солнце!</h2>
@@ -266,7 +266,7 @@ function showSurprise() {
                 <button id="closeSurprise" style="background:#ff7b7b; border:none; padding:10px 25px; border-radius:40px; color:white; font-weight:bold;">Закрыть</button>
             </div>
         </div>
-    ;
+    ";
     document.body.appendChild(modal);
     document.getElementById('closeSurprise').onclick = () => modal.remove();
 }
