@@ -244,3 +244,4 @@ window.addEventListener('scroll', updateProgress);
 window.addEventListener('resize', updateProgress);
 surpriseBtn?.addEventListener('click', showSurprise);
 shareBtn?.addEventListener('click', shareLove);
+
